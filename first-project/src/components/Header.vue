@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import './../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>

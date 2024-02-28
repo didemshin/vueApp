@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+
+</script>
+
 <template>
   <div class="mt-5 pt-5 pb-5 footer">
     <div class="container">
@@ -10,12 +15,11 @@
         <div class="col-lg-3 col-xs-12 links">
           <h4 class="mt-lg-0 mt-sm-3">Links</h4>
           <ul class="m-0 p-0">
-            <li>- <a href="#">Lorem ipsum</a></li>
-            <li>- <a href="#">Nam mauris velit</a></li>
-            <li>- <a href="#">Etiam vitae mauris</a></li>
-            <li>- <a href="#">Fusce scelerisque</a></li>
-            <li>- <a href="#">Sed faucibus</a></li>
-            <li>- <a href="#">Mauris efficitur nulla</a></li>
+            <li><RouterLink to="/">Home</RouterLink></li>
+            <li><RouterLink to="/about">About</RouterLink></li>
+            <li><RouterLink to="/store">Store</RouterLink></li>
+            <li><RouterLink to="/contact">Contact</RouterLink></li>
+            <li><RouterLink to="/help">Help</RouterLink></li>
           </ul>
         </div>
         <div class="col-lg-4 col-xs-12 location">
@@ -33,12 +37,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "Footer"
-}
-</script>
 
 <style scoped lang="scss">
 
